@@ -1,0 +1,17 @@
+[project]
+name = "agentic-resume-builder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "llama-index-tools-duckduckgo>=0.3.0",
+    "llama-index>=0.12.14",
+    "python-dotenv>=1.0.1",
+    "tavily-python>=0.5.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
