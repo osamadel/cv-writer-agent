@@ -1,0 +1,166 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=2cm,
+    footskip=1.0cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{charter}
+
+% Ensure ATS compatibility:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% Formatting settings:
+\raggedright
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\pagenumbering{gobble}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+
+% Custom bullet points:
+\renewcommand\labelitemi{\small$\bullet$}
+
+% Custom environments:
+\newenvironment{highlights}{
+    \begin{itemize}[topsep=0.1cm, parsep=0.1cm, itemsep=0pt, leftmargin=1em]
+}{
+    \end{itemize}
+}
+
+% Header environment:
+\newenvironment{header}{
+    \centering\linespread{1.3}
+}{
+    \par
+}
+
+\begin{document}
+
+\begin{header}
+    \fontsize{25pt}{25pt}\selectfont Osama Adel Feshier
+
+    \vspace{5pt}
+
+    \normalsize
+    Riyadh, Saudi Arabia \textbar{}
+    \href{mailto:osama.adel.shokry@gmail.com}{osama.adel.shokry@gmail.com} \textbar{}
+    \href{tel:+966552378247}{+966 55 2378 247} \textbar{}
+    \href{https://www.linkedin.com/in/osamaadel/}{linkedin.com/in/osamaadel} \textbar{}
+    \href{https://github.com/osamadel}{github.com/osamadel}
+\end{header}
+
+\vspace{0.5cm}
+
+\section{Summary}
+Passionate Data Scientist with expertise in machine learning and ICT infrastructure, driving data-driven innovation at TAWAL. CDMP associate with proven leadership in research, analytics, and team collaboration. Blends academic rigor with industry impact to deliver transformative solutions. Eager to tackle diverse challenges across new fields.
+
+\vspace{0.5cm}
+
+\section{Skills}
+\textbf{GenAI:} OpenAI, Azure OpenAI, Llama-index, LangChain, Agents, RAG, Text2SQL \\
+\textbf{Machine Learning/Deep Learning:} Python, Scikit-learn, PyTorch, TensorFlow, Keras, Pandas, Numpy, Matplotlib, Seaborn, Plotly, Statsmodels, OpenCV \\
+\textbf{Programming Languages:} Python, C, C++, SQL \\
+\textbf{Prototyping:} Streamlit, FastAPI, Chainlit, SQLModel, Reflex \\
+\textbf{ML Engineering:} Docker, Docker Swarm, Kubernetes (fundamentals), Git, CI/CD (fundamentals), MLOps, LLMOps \\
+\textbf{Languages:} Arabic (native), English (professional proficiency)
+
+\vspace{0.5cm}
+
+\section{Experience}
+\textbf{Lead Data Scientist}, TAWAL -- Riyadh, Saudi Arabia \textit{(January 2024 – Present)} \\
+\textit{(Contractor via ccc by stc)} \\
+\begin{highlights}
+    \item Developed the company’s GenAI strategy through research, vendor discussions, and experimentation, collaborating across teams to define the tech stack, use cases, and business impact.
+    \item Built Agentic RAG-based assistants with Llama-Index and OpenAI, enabling data retrieval from databases and documents while automating actions like email and chatbot interactions, showcasing potential to save hours of manual work.
+    \item Led the deployment of diverse AI solutions, including chatbots, deep learning computer vision apps, and route optimization tools, ensuring seamless integration and operational success within a tight timeline.
+    \item Mentored a data science team to deliver production-ready ML models, driving impactful results and exceeding key performance benchmarks.
+    \item Collaborated across departments to analyze workflows and implement AI-driven solutions, achieving dramatic reductions in process times from weeks to seconds.
+    \item Led the enhancement of AI infrastructure, reducing inference time from minutes to milliseconds and increasing operational efficiency through MLOps best practices.
+    \item Established a standardized AI application development lifecycle based on the CRISP-DM process, improving collaboration across technical teams.
+    \item Engaged with major AI vendors to evaluate tools and services, providing detailed insights and recommendations to management on potential efficiency gains and development acceleration opportunities.
+\end{highlights}
+
+\vspace{0.3cm}
+
+\textbf{Data Scientist}, TAWAL -- Riyadh, Saudi Arabia \textit{(September 2021 – December 2023)} \\
+\textit{(Contractor via Masterworks, Norconsult Telematics, and solutions by stc)} \\
+\begin{highlights}
+    \item Deployed an unsupervised ML model to analyze historical alarm data, reducing Tower Management System tickets by $27\%$, surpassing the existing rules-based system.
+    \item Discovered opportunities for increased revenue by $12\%$ by clustering similar products in the CRM and Billing systems, simplifying pricing rules, and enhancing offer strategies.
+    \item Designed a linear programming AI solution that cut technician assignment time from minutes to seconds, improving efficiency and responsiveness.
+    \item Deployed a user-friendly navigational chatbot to production using Botpress and Kubernetes (OKD), improving website navigation and ensuring visitors quickly found relevant information.
+    \item Developed a predictive maintenance system with LightGBM, achieving up to $72\%$ outage detection accuracy, enabling proactive measures by the Operation \& Maintenance teams.
+    \item Managed Python-based ETL jobs for data extraction and transformation, ensuring smooth integration with BI tools like Qlik Sense for data visualization.
+\end{highlights}
+
+\vspace{0.3cm}
+
+\textbf{Teaching and Research Assistant}, E-JUST -- Borg Al Arab, Egypt \textit{(October 2019 – September 2021)} \\
+\begin{highlights}
+    \item Contributed to 3 impactful research projects, resulting in the publication of 4 conference papers, including 2 as the first author.
+    \item Conducted research on human activity recognition using IMUs, enhancing understanding of movement patterns for various applications.
+    \item Worked on creating an indoor workout virtual coach, improving fitness training with AI-driven guidance and personalization.
+\end{highlights}
+
+\vspace{0.3cm}
+
+\textbf{Machine Learning Engineer}, DevisionX -- Cairo, Egypt \textit{(October 2017 – November 2018)} \\
+\begin{highlights}
+    \item Executed computer vision tasks, achieving a remarkable $98\%$ accuracy by training convolutional neural networks to identify Arabic/Hindi numerals in Egyptian identification cards.
+    \item Contributed to textile defect classification utilizing a combination of traditional and AI-based computer vision methods.
+\end{highlights}
+
+\vspace{0.5cm}
+
+\section{Education}
+\textbf{MSc in Computer Science and Engineering}, Egypt Japan University of Science and Technology (E-JUST) \textit{(September 2019 – September 2021)} \\
+GPA: 3.85/4.0 \\
+\textbf{Coursework:} Advanced Machine Learning, Learning Algorithms, Advanced Intelligent Systems
+
+\vspace{0.3cm}
+
+\section{Publications}
+\textbf{Inertial Gait-based Person Authentication Using Siamese Networks (July 2021)} \\
+\textbf{Adel, Osama}, Soliman, Mostafa, Gomaa, Walid \\
+\href{https://doi.org/10.1109/IJCNN52387.2021.9534261}{DOI: 10.1109/IJCNN52387.2021.9534261} \\
+
+\textbf{Gait-Based Person Identification Using Multiple Inertial Sensors (September 2020)} \\
+\textbf{Adel, Osama}, Nafea, Yousef, Hesham, Ahmed, Gomaa, Walid \\
+\href{https://doi.org/10.5220/0009791506210628}{DOI: 10.5220/0009791506210628}
+
+\textbf{Vsgd: a bi-modal dataset for gait analysis (May 2021)} \\
+Madcor, Hisham, Alnaggar, Ahmed, Rohaim, Yasser, Osman, Menna, Mostafa, MennatAllah, \textbf{Adel, Osama}, Gomaa, Walid \\
+\href{https://doi.org/10.1109/MIUCC52538.2021.9447630}{DOI: 10.1109/MIUCC52538.2021.9447630}
+
+\textbf{Location Determination of On-body Inertial Sensors (July 2021)} \\
+Madcor, Hisham, \textbf{Adel, Osama}, Gomaa, Walid \\
+\href{https://doi.org/10.5220/0010582806930700}{DOI: 10.5220/0010582806930700}
+
+
+\vspace{0.3cm}
+
+\section{Certificates}
+\textbf{Certified Data Management Professional - Associate (January 2025)} \href{https://eu.credential.net/037dbe8a-65a0-43be-96f3-a6278cb7c41c}{Credential Link} \\
+\textbf{McKinsey Forward Program (April 2024)} \href{https://www.credly.com/badges/b0027fda-b653-4e6d-8118-91d3a252c0b7}{Credential Link} \\
+\textbf{Applied Data Science Lab - WorldQuant University (June 2023)} \href{https://www.credly.com/badges/992d91ad-7584-47f7-ac98-67d6658c1b73}{Credential Link} \\
+\textbf{Machine Learning Cross-Skilling - Udacity (January 2023)} \href{https://www.udacity.com/certificate/e/5b2676be-7175-11ed-942c-4f1c788a040d}{Credential Link} \\
+\textbf{AWS Data Analysis Specialty (May 2022)} \href{https://www.credly.com/badges/eb3fb25c-8fd7-4140-b5ca-4f30fb47d1c9}{Credential Link}
+
+\end{document}
